@@ -11,7 +11,7 @@ export default function Hero() {
     <div className="max-w-7xl mx-auto px-4 py-1 md:py-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-10 md:mb-0">
         <div className="order-2 md:order-1 flex flex-col justify-center gap-2 md:gap-5">
-          <span className="flex items-center justify-center md:justify-start">
+          <span className="hidden md:flex items-center justify-center md:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -30,9 +30,25 @@ export default function Hero() {
               Website Developer, Data, & Design Enthusiast
             </h1>
           </span>
+
           <h2 className="text-3xl md:text-6xl font-bold text-center md:text-left">
             Andhika Pradana Byantara Ferdiananda
           </h2>
+          <div className="flex md:hidden gap-4 justify-center">
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              className="text-sm md:text-base rounded-lg bg-[#142621] text-white px-2 py-1 hover:shadow-lg"
+            >
+              Resume
+            </a>
+            <a
+              href="#project"
+              className="text-sm md:text-base rounded-lg bg-[#ff6846] text-white px-2 py-1 hover:shadow-lg"
+            >
+              Project
+            </a>
+          </div>
 
           <div className="flex flex-col gap-1">
             <span className="text-xl md:text-3xl font-serif text-[#ff6846] text-center md:text-left">
@@ -44,10 +60,44 @@ export default function Hero() {
               every step along the way is a valuable experience.
             </p>
           </div>
+          <div className="hidden md:flex gap-4">
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              className="text-sm md:text-base rounded-lg bg-[#142621] text-white px-2 py-1 hover:shadow-lg"
+            >
+              Resume
+            </a>
+            <a
+              href="#project"
+              className="text-sm md:text-base rounded-lg bg-[#ff6846] text-white px-2 py-1 hover:shadow-lg"
+            >
+              Project
+            </a>
+          </div>
         </div>
         <div className="order-1 md:order-2">
           <div className="relative">
-            <div className="overflow-hidden aspect-square md:aspect-auto rounded-full md:rounded-b-4xl md:rounded-t-full ml-0 md:ml-10 my-5">
+            <span className="flex md:hidden items-center justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9a7a23"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-minus preview-icon"
+            >
+              <path d="M5 12h14" />
+            </svg>
+            <h1 className="text-xs md:text-base">
+              Website Developer, Data, & Design Enthusiast
+            </h1>
+          </span>
+            <div className="overflow-hidden aspect-square md:aspect-auto rounded-full md:rounded-b-4xl md:rounded-t-full ml-0 md:ml-10 my-0 md:my-5 mt-5 md:mt-0  ">
               <img
                 src="/fotoku.jpg"
                 alt="foto"
