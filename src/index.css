@@ -1,0 +1,5 @@
+@import "tailwindcss";
+body { font-family: "Inter", sans-serif; }
+
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 80px; }
